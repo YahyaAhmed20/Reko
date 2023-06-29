@@ -1,19 +1,19 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rako website</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet"href="{% static 'css/yahya.css' %}">
+        <title>Rako website</title>
 </head>
 
 <body>
     <section id="header">
         <div class="container">
-            <img src="images/logo.png" alt="logo" class="logo">
+            <img src="{%static 'images/logo.png'%}" alt="logo" class="logo">
             <div class="header-text">
                 <h1>this site for teaching programming and designing</h1>
                 <span class="square"></span>
@@ -42,7 +42,7 @@
             <li><a href="#">contact us</a></li>
         </ul>
     </nav>
-    <img src="images/menu.png" id="menuBtn">
+    <img src="{%static 'images/menu.png'%}" id="menuBtn">
 
 
     <!-- about us section -->
@@ -78,17 +78,17 @@
     <section id="features">
         <div class="feature-row">
             <div class="fecture-col">
-                <img src="images/pic-1.png">
+                <img src="{%static 'images/pic-1.png'%}">
                 <h4>Learn online</h4>
                 <p>we will explain the courses online</p>
             </div>
             <div class="fecture-col">
-                <img src="images/pic-2.png">
+                <img src="{%static 'images/pic-2.png'%}">
                 <h4>Learn online</h4>
                 <p>we will explain the courses online</p>
             </div>
             <div class="fecture-col">
-                <img src="images/pic-3.png">
+                <img src="{%static 'images/pic-3.png'%}">
                 <h4>Learn online</h4>
                 <p>we will explain the courses online</p>
             </div>
@@ -126,7 +126,7 @@
                 </div>
             </div>
             <div class="course-right">
-                <img src="images/course.png">
+                <img src="{%static 'images/course.png'%}">
             </div>
         </div>
     </section>
@@ -136,7 +136,7 @@
 
     <section id="offers">
         <div class="about-left">
-            <img src="images/offer.png">
+            <img src="{%static 'images/offer.png'%}">
         </div>
         <div class="about-right">
             <div class="about-text">
@@ -186,7 +186,7 @@
                 </div>
             </div>
             <div class="contact-right">
-                <img src="images/contact.png">
+                <img src="{%static 'images/contact.png'%}">
             </div>
         </div>
     </section>
@@ -222,7 +222,7 @@
                         <small>+90012138</small>
                     </div>
                     <div class="footer-logo">
-                        <img src="images/logo.png">
+                        <img src="{%static 'images/logo.png'%}">
                         <button class="btn">Arabic</button>
                     </div>
                 </div>
@@ -233,10 +233,10 @@
 
 
     <div class="social-icons">
-        <img src="images/facebook.png" title="Facebook">
-        <img src="images/linkedin.png" title="linkedin">
-        <img src="images/twitter.png" title="twitter">
-        <img src="images/instagram.png" title="instegram">
+        <img src="{%static 'images/facebook.png'%}" title="Facebook">
+        <img src="{%static 'images/linkedin.png'%}" title="linkedin">
+        <img src="{%static 'images/twitter.png'%}" title="twitter">
+        <img src="{%static 'images/instagram.png'%}" title="instegram">
     </div>
 
 
