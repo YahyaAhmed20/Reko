@@ -1,4 +1,6 @@
 {% load static %}
+
+{% block content  %}
 <!DOCTYPE html>
 <html lang="en">
     
@@ -34,12 +36,8 @@
 
     <nav id="sidenav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">contact us</a></li>
+            <li><a href="{% url 'base' %}">Home</a></li>
+            <li><a href="{% url 'contact' %}">contact us</a></li>
         </ul>
     </nav>
     <img src="{%static 'images/menu.png'%}" id="menuBtn">
@@ -257,6 +255,5 @@
 
 </html>
 
-{% block content  %}
 
 {% endblock content  %}

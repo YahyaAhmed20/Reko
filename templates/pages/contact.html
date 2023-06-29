@@ -1,5 +1,159 @@
-{% extends 'base.html' %}
+{% load static %}
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet"href="{% static 'css/yahya.css' %}">
+        <title>Rako website</title>
+</head>
+
+<body>
+  
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="{% url 'base' %}">Home</a></li>
+            <li><a href="{% url 'contact' %}">contact us</a></li>
+        </ul>
+    </nav>
+    <img src="{%static 'images/menu.png'%}" id="menuBtn">
+
+
+    <!-- about us section -->
+    <section id="about-us">
+        <div class="about-left">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right">
+            <div class="about-text">
+                <h1>About us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Vitae eligendi, provident
+                    maxime deserunt eius quos ipsam reiciendis
+                    facilis, minima soluta, molestiae perspiciatis
+                    sapiente ab sint magni aspernatur veniam ad dolor.
+                </p><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <br>
+                <h2>"We are best team to explain courses"
+                    , Progrmming and Designe
+                </h2>
+                <h3>Rakwan ali</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="feature-row">
+            <div class="fecture-col">
+                <img src="{%static 'images/pic-1.png'%}">
+                <h4>Learn online</h4>
+                <p>we will explain the courses online</p>
+            </div>
+            <div class="fecture-col">
+                <img src="{%static 'images/pic-2.png'%}">
+                <h4>Learn online</h4>
+                <p>we will explain the courses online</p>
+            </div>
+            <div class="fecture-col">
+                <img src="{%static 'images/pic-3.png'%}">
+                <h4>Learn online</h4>
+                <p>we will explain the courses online</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="btn">Get Start Free</button>
+        </div>
+    </section>
+
+            <div class="footer-right">
+                <div class="footer-info">
+                    <div class="copy-write">
+                        <small>support@Rako.com</small><br>
+                        <small>Copywrite 2021 Rako</small><br>
+                        <small>+90012138</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="{%static 'images/logo.png'%}">
+                        <button class="btn">Arabic</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="social-icons">
+        <img src="{%static 'images/facebook.png'%}" title="Facebook">
+        <img src="{%static 'images/linkedin.png'%}" title="linkedin">
+        <img src="{%static 'images/twitter.png'%}" title="twitter">
+        <img src="{%static 'images/instagram.png'%}" title="instegram">
+    </div>
+
+    <section id="contact">
+        <div class="container contactus">
+            <div class="contact-left">
+                <h1>Sign up to learn <br> on our site</h1>
+                <form>
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="btn-sign">
+                        <button class="btn">Sign up</button>
+                        <a href="/login" style="
+    margin: auto;
+    /* color: red; */
+    font-size: xx-large;
+    padding: 10px 5px 6px 35px;
+">Log in</a>
+
+                    </div>
+                </form>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            <div class="contact-right">
+                <img src="{%static 'images/contact.png'%}">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var mb = document.getElementById('menuBtn');
+        var sv = document.getElementById('sidenav');
+        sv.style.right = "-250px";
+        mb.onclick = function () {
+            if (sv.style.right == "-250px") {
+                sv.style.right = "0";
+            } else {
+                sv.style.right = "-250px";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
 {% block content  %}
-
 {% endblock content  %}
